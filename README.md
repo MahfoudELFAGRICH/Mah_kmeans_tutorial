@@ -1,0 +1,4 @@
+Comment ça marche ?
+Tout d'abord, chaque point de données est attribué de manière aléatoire à l'un des clusters K. Ensuite, nous calculons le centroïde (fonctionnellement le centre) de chaque cluster et réattribuons chaque point de données au cluster ayant le centroïde le plus proche. Nous répétons ce processus jusqu'à ce que les attributions de cluster pour chaque point de données ne changent plus.
+
+Le clustering K-means nécessite que nous sélectionnions K, le nombre de clusters dans lesquels nous voulons regrouper les données. La méthode du coude nous permet de représenter graphiquement l'inertie (une mesure basée sur la distance) et de visualiser le point auquel elle commence à diminuer linéairement. Ce point est appelé le « coude » et constitue une bonne estimation de la meilleure valeur pour K en fonction de nos données.
